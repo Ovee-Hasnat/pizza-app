@@ -1,0 +1,28 @@
+.container {
+    background-color: #d1411e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.leftFooter {
+    font-size: 22px;
+    flex: 1;
+    font-family: 'IM Fell French Canon SC', serif;
+    color: white;
+    text-align: center;
+    
+}
+
+.rightFooter {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightFooter > p {
+    padding-top: 5px;
+    font-size: 18px;
+}
