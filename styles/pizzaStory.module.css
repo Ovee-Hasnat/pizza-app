@@ -21,7 +21,6 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    
     background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(223, 207, 174, 1) 70%);
     padding: 0;
     width: 100%;
@@ -71,15 +70,18 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:650px) {
     .story {
         flex-wrap: wrap;
         margin-bottom: 15px;
+        justify-content: space-around;
     }
     
     .storyReverse {
         flex-wrap: wrap;
         margin-bottom: 15px;
+        justify-content: space-around;
+        background: rgba(223, 207, 174, 1);
     }
 
     .pizzaText {

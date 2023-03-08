@@ -16,27 +16,17 @@ const Footer = () => {
       </div>
       <div className={styles.rightFooter}>
         <p>Find us on socials </p>
-        <div style={{color: "White"}}>
+        <div style={{ color: "#fafafa", display: "flex" }}>
           <FontAwesomeIcon
             icon={faSquareFacebook}
-            size="2x"
             style={{ margin: "0 4px" }}
           />
           <FontAwesomeIcon
             icon={faSquareInstagram}
-            size="2x"
             style={{ margin: "0 4px" }}
           />
-          <FontAwesomeIcon
-            icon={faTiktok}
-            size="2x"
-            style={{ margin: "0 4px" }}
-          />
-          <FontAwesomeIcon
-            icon={faUber}
-            size="2x"
-            style={{ margin: "0 4px" }}
-          />
+          <FontAwesomeIcon icon={faTiktok} style={{ margin: "0 4px" }} />
+          <FontAwesomeIcon icon={faUber} style={{ margin: "0 4px" }} />
         </div>
       </div>
     </div>

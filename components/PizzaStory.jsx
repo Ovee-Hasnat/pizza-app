@@ -31,7 +31,7 @@ const PizzaStory = () => {
         </div>
         <div className={styles.storyReverse}>
           <div className={styles.storyImg}>
-            <Image src={"/img/pizza3.png"} alt="" width={300} height={400} />
+            <Image src={"/img/pizza3.png"} alt="" width={300} height={400}/>
           </div>
           <div className={styles.pizzaText}>
             <div className={styles.title}>Meaty Onion Pizza</div>

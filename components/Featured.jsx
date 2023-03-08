@@ -40,7 +40,7 @@ const Featured = () => {
       >
         {images.map((img, i) => (
           <div className={styles.imgContainer} key={i}>
-            <Image src={img} alt="" fill style={{ objectFit: "contain" }} />
+            <Image src={img} alt="" fill style={{ objectFit: "cover" }} />
           </div>
         ))}
       </div>

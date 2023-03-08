@@ -1,29 +1,57 @@
 .container {
-    padding: 20px;
-    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    padding: 10px 200px;
 }
 
 .wrapper {
-    margin: auto;
-    width:fit-content;
+    width: auto;
+    padding: 20px;
+    height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin: auto;
 }
 
-
-.right > p {
-        font-size: 105px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 2px;
-        color: #383838;
+.leftWrapper{
+    width: 50%;
+    position: relative;
 }
 
-.right {
-    
-    justify-self: right;
-    height: 730px;
-    
+.posterImg {
+    height: 35vh;
+}
+
+.rightWrapper{
+    width: 50%;
+}
+
+.posterText {
+    font-size: 35px;
+    margin: 0 35px;
+}
+
+.posterText > p > span {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 970px) {
+    .wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .posterText{
+        width: 70%;
+        margin: 20px auto 0;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .leftWrapper{
+        width: 70%;
+    }
 }

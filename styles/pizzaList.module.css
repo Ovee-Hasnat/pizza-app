@@ -1,0 +1,6 @@
+.container {
+    padding: 10px 5vw;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}

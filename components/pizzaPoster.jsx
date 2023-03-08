@@ -7,20 +7,23 @@ const PizzaPoster = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.left}>
-            <Image src={"/img/poster.jpg"} alt="" height={730} width={520} />
+        <div className={styles.leftWrapper}>
+          <div className={styles.posterImg}>
+            <Image
+              src={"/img/poster.jpg"}
+              fill
+              alt=""
+              style={{ objectFit: "cover" }}
+            />
+          </div>
         </div>
-        <div className={styles.right}>
-          <p>
-            Life
-            <br />
-            is
-            <br /> short,
-            <br />
-            eat
-            <br /> some <br />
-            pizza.
-          </p>
+        <div className={styles.rightWrapper}>
+          <div className={styles.posterText}>
+            <p>
+              &#8216; There's no problem that can't be solved with pizza.
+              &#8217; <br /> <span>- ChatGPT, 2023</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
