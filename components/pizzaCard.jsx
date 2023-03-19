@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Box,
   Button,
@@ -14,8 +16,14 @@ import styles from "../styles/pizzaCard.module.css";
 
 const PizzaCard = (props) => {
   const router = useRouter();
+
   const orderNowHandler = () => {
-    router.push(`/pizzas/${props.data.id}`);
+    router.push(
+      {
+        pathname: `/pizzas/${props.data.id}`,
+      },
+      `/pizzas/${props.data.id}`
+    );
   };
 
   return (
@@ -26,7 +34,7 @@ const PizzaCard = (props) => {
             <CardMedia
               component="img"
               height="400px"
-              image={`/img/pizzalist${props.data.id}.jpg`}
+              image={props.data.img}
               alt={props.data.name}
             />
             <CardContent>

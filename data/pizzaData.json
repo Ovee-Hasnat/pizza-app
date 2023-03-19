@@ -1,37 +1,55 @@
 [
-    {
-      "id": 1,
-      "name": "Margherita",
-      "price": 9.99,
-      "ingredients": ["tomato sauce", "mozzarella cheese", "fresh basil"],
-      "description": "A classic pizza with tomato sauce, mozzarella cheese, and fresh basil leaves."
-    },
-    {
-      "id": 2,
-      "name": "Pepperoni",
-      "price": 11.99,
-      "ingredients": ["tomato sauce", "mozzarella cheese", "pepperoni"],
-      "description": "A classic pizza with tomato sauce, mozzarella cheese, and spicy pepperoni slices."
-    },
-    {
-      "id": 3,
-      "name": "Hawaiian",
-      "price": 12.99,
-      "ingredients": ["tomato sauce", "mozzarella cheese", "ham", "pineapple"],
-      "description": "A pizza with tomato sauce, mozzarella cheese, ham, and juicy pineapple chunks."
-    },
-    {
-      "id": 4,
-      "name": "Meat Lovers",
-      "price": 14.99,
-      "ingredients": ["tomato sauce", "mozzarella cheese", "sausage", "pepperoni", "bacon"],
-      "description": "A pizza with tomato sauce, mozzarella cheese, spicy sausage, pepperoni, and crispy bacon bits."
-    },
-    {
-      "id": 5,
-      "name": "Veggie Delight",
-      "price": 13.99,
-      "ingredients": ["tomato sauce", "mozzarella cheese", "mushrooms", "green peppers", "onions", "black olives"],
-      "description": "A vegetarian pizza with tomato sauce, mozzarella cheese, mushrooms, green peppers, onions, and black olives."
-    }
+  {
+    "id": 1,
+    "name": "Margherita",
+    "price": 9.99,
+    "img": "/img/pizzalist1.jpg",
+    "ingredients": ["tomato sauce", "mozzarella cheese", "fresh basil"],
+    "description": "A classic pizza with tomato sauce, mozzarella cheese, and fresh basil leaves."
+  },
+  {
+    "id": 2,
+    "name": "Pepperoni",
+    "price": 11.99,
+    "img": "/img/pizzalist2.jpg",
+    "ingredients": ["tomato sauce", "mozzarella cheese", "pepperoni"],
+    "description": "A classic pizza with tomato sauce, mozzarella cheese, and spicy pepperoni slices."
+  },
+  {
+    "id": 3,
+    "name": "Hawaiian",
+    "price": 12.99,
+    "img": "/img/pizzalist3.jpg",
+    "ingredients": ["tomato sauce", "mozzarella cheese", "ham", "pineapple"],
+    "description": "A pizza with tomato sauce, mozzarella cheese, ham, and juicy pineapple chunks."
+  },
+  {
+    "id": 4,
+    "name": "Meat Lovers",
+    "price": 14.99,
+    "img": "/img/pizzalist4.jpg",
+    "ingredients": [
+      "tomato sauce",
+      "mozzarella cheese",
+      "sausage",
+      "pepperoni",
+      "bacon"
+    ],
+    "description": "A pizza with tomato sauce, mozzarella cheese, spicy sausage, pepperoni, and crispy bacon bits."
+  },
+  {
+    "id": 5,
+    "name": "Veggie Delight",
+    "price": 13.99,
+    "img": "/img/pizzalist5.jpg",
+    "ingredients": [
+      "tomato sauce",
+      "mozzarella cheese",
+      "mushrooms",
+      "green peppers",
+      "onions",
+      "black olives"
+    ],
+    "description": "A vegetarian pizza with tomato sauce, mozzarella cheese, mushrooms, green peppers, onions, and black olives."
+  }
 ]

@@ -7,7 +7,7 @@ const PizzaPoster2 = () => {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.leftWrapper}>
-          <Image className={styles.photo} src={"/img/poster2.jpg"} fill />
+          <Image className={styles.photo} src={"/img/poster2.jpg"} alt="" fill />
         </div>
         <div className={styles.tagline}>
           <h1>Bet, <br/ >you can't eat less.</h1>

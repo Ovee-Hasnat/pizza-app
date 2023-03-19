@@ -1,0 +1,68 @@
+.wrapper {
+  height: 95vh;
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Imgwrapper {
+  margin-top: 5vh;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.right {
+  width: 50%;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+
+.right > h2 {
+  font-size: 3rem;
+}
+
+.right > p {
+  font-size: 1.2rem;
+  margin: 25px 0 ;
+}
+
+.name {
+  color: #d1411e;
+}
+
+.description {
+  font-style: oblique;
+}
+
+.ingredients {
+  text-transform: capitalize;
+  text-indent: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .left{
+    width: 90%;
+  }
+
+  .right{
+    width: 90%;
+    margin: 3vh auto;
+  }
+
+  .Imgwrapper{
+    width: 90%;
+    
+  }
+}
