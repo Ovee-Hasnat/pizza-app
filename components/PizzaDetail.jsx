@@ -24,15 +24,24 @@ const PizzaDetail = () => {
 
   const pizzaId = router.asPath.split("/").slice(2)[0];
 
-  const [size, setSize] = useState(0);
+  const [size, setSize] = useState("small");
 
   const handleSize = (event) => {
     setSize(event.target.value);
   };
 
+  let pM = 0;
+  if (size === "large") {
+    pM = 3;
+  } else if (size === "medium") {
+    pM = 2;
+  } else {
+    pM = 0;
+  }
+
   const pData = pizzaData.filter((pizza) => pizza.id === parseInt(pizzaId));
 
-  const price = (pData[0].price + size).toFixed(2);
+  const price = (pData[0].price + pM).toFixed(2);
 
   const cart = useSelector((state) => state.cart.cart);
   const dispatch = useDispatch();
@@ -90,9 +99,9 @@ const PizzaDetail = () => {
             >
               <InputLabel>Choose Size</InputLabel>
               <Select value={size} onChange={handleSize} label="size">
-                <MenuItem value={0}>Small</MenuItem>
-                <MenuItem value={2}>Medium</MenuItem>
-                <MenuItem value={3}>Large</MenuItem>
+                <MenuItem value={"small"}>Small</MenuItem>
+                <MenuItem value={"medium"}>Medium</MenuItem>
+                <MenuItem value={"large"}>Large</MenuItem>
               </Select>
             </FormControl>
 
@@ -121,10 +130,22 @@ const PizzaDetail = () => {
               variant="text"
               onClick={(e) => router.push("/pizzas")}
               sx={{
-                margin: "1vh 0",
+                margin: "1vh 0 0 0",
               }}
             >
               return
+            </Button>
+
+            <Button
+              size="medium"
+              variant="text"
+              onClick={(e) => router.push("/cart")}
+              sx={{
+                display: "block",
+                color: "#d1411e",
+              }}
+            >
+              go to cart
             </Button>
           </div>
         </div>

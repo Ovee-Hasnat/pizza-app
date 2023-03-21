@@ -36,9 +36,9 @@ const Navbar = () => {
               Pizzas
             </Link>
             <Link href={"/"}>
-            <div className={styles.logo}>
-              <Image src="/img/logo.png" alt="" width="90" height="90" />
-            </div>
+              <div className={styles.logo}>
+                <Image src="/img/logo.png" alt="" width="90" height="90" />
+              </div>
             </Link>
             <Link href={"/orders"} className={styles.navList}>
               Orders
@@ -49,7 +49,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className={styles.items}>
-          <Link href={"/orders"}>
+          <Link href={"/cart"}>
             <div className={styles.cart}>
               <Image src="/img/cart.png" alt="" width="30" height="30" />
             </div>

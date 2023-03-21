@@ -1,5 +1,7 @@
 .wrapper {
-  height: 95vh;
+  padding-top: 100px;
+  height: 100vh;
+  min-height: calc(100vh - 120px);
   width: 100%;
   display: flex;
 }
@@ -30,7 +32,7 @@
 
 .right > p {
   font-size: 1.2rem;
-  margin: 25px 0 ;
+  margin: 25px 0;
 }
 
 .name {
@@ -47,22 +49,21 @@
 }
 
 @media screen and (max-width: 600px) {
-  .wrapper{
+  .wrapper {
     flex-direction: column;
     align-items: center;
     height: auto;
   }
-  .left{
+  .left {
     width: 90%;
   }
 
-  .right{
+  .right {
     width: 90%;
     margin: 3vh auto;
   }
 
-  .Imgwrapper{
+  .Imgwrapper {
     width: 90%;
-    
   }
 }

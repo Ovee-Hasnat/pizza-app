@@ -5,11 +5,7 @@ import styles from "../styles/featured.module.css";
 
 const Featured = () => {
   const [index, setIndex] = useState(0);
-  const images = [
-    "/img/featured1.png",
-    "/img/featured2.png",
-    "/img/featured3.png",
-  ];
+  const images = ["/img/banner3.jpg", "/img/banner2.jpg", "/img/banner1.jpg"];
 
   const handleArrow = (direction) => {
     if (direction === "l") {

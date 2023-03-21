@@ -1,37 +1,51 @@
 .sideMenu {
-    height: 100vh;
-    width: 35vw;
-    position: absolute;
-    z-index: 9;
-    right: 0;
-    background: linear-gradient(0deg, rgba(250, 250, 250, 0) 10%, rgba(0, 0, 0, 1) 50%);
-    opacity: 45%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 130px;
-    align-items: center;
-    color: #fafafa;
-    transition: all 0.5s ease-in-out;
+  height: 90vh;
+  width: 40vw;
+  position: fixed;
+  z-index: 9;
+  right: 0;
+  top: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(250, 250, 250, 0) 10%,
+    rgba(0, 0, 0, 1) 50%
+  );
+  opacity: 45%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+  align-items: center;
+  color: #fafafa;
+  transition: all 0.5s ease-in-out;
 }
 
 .sideMenu:hover {
-    opacity: 75%;
+  opacity: 75%;
 }
 
 .navList {
-    color: #ffffff;
-    margin: 20px 0;
-    font-size: 4vw;
-    font-weight: 600;
-    transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  margin: 20px 0;
+  font-size: 4vw;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
 }
 
 .navList:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-@media screen and (min-width: 999px){
-    .sideMenu{
-        display: none;
-    }
+.counter {
+  text-align: center;
+  width: 4vw;
+  height: 4vw;
+  font-size: 3vw;
+  border-radius: 50%;
+  background-color: #d1411e;
+}
+
+@media screen and (min-width: 999px) {
+  .sideMenu {
+    display: none;
+  }
 }

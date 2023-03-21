@@ -1,0 +1,33 @@
+.container {
+  margin-top: 25px;
+  padding: 0 10vw;
+  width: 100%;
+}
+
+.container > table {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.container > table > thead > tr :first-child {
+  background-color: #fafafa;
+}
+.container > table > thead {
+  background-color: #d1411e;
+}
+
+.container > table th td {
+  padding: 4px;
+}
+
+.cross {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
+}

@@ -5,7 +5,7 @@ import React from "react";
 const pizzas = () => {
   return (
     <div>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", paddingTop: "100px" }}>
         <div style={{ width: "50%", margin: "auto" }}>
           <p
             style={{
