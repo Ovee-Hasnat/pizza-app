@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <PizzaPoster2 />
-      <Featured />
       <PizzaStory />
+      <Featured />
       <PizzaPoster />
     </>
   );

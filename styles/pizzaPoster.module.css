@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     height: auto;
-    padding: 10px 200px;
+    padding: 10px 300px;
 }
 
 .wrapper {
@@ -19,7 +19,7 @@
 }
 
 .posterImg {
-    height: 35vh;
+    height: 45vh;
 }
 
 .rightWrapper{
