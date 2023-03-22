@@ -4,7 +4,7 @@ import pizzaData from "../data/pizzaData.json";
 
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "@/src/Redux/Features/cart/cartSlice";
 
 import styles from "../styles/pizzaDetail.module.css";
@@ -18,11 +18,10 @@ import {
   Select,
 } from "@mui/material";
 
-const PizzaDetail = () => {
+const PizzaDetail = ({ id }) => {
   const router = useRouter();
-  //console.log(router.asPath.split("/").slice(2));
 
-  const pizzaId = router.asPath.split("/").slice(2)[0];
+  const pizzaId = id;
 
   const [size, setSize] = useState("small");
 
@@ -39,11 +38,10 @@ const PizzaDetail = () => {
     pM = 0;
   }
 
-  const pData = pizzaData.filter((pizza) => pizza.id === parseInt(pizzaId));
+  const pData = pizzaData.filter((pizza) => pizza.id == pizzaId);
 
   const price = (pData[0].price + pM).toFixed(2);
 
-  const cart = useSelector((state) => state.cart.cart);
   const dispatch = useDispatch();
 
   const productToCart = {
@@ -58,8 +56,6 @@ const PizzaDetail = () => {
     event.preventDefault();
     dispatch(addToCart(productToCart));
   };
-
-  console.log(cart);
 
   return (
     <div>
