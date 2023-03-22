@@ -52,7 +52,7 @@ const PizzaStory = () => {
         </div>
         <div className={styles.story}>
           <div className={styles.storyImg}>
-            <Image src={"/img/pizza2.png"} alt="" width={300} height={400} />
+            <Image src={"/img/poster.jpg"} alt="" width={300} height={400} />
           </div>
           <div className={styles.pizzaText}>
             <div className={styles.title}>Tender Beef Pizza</div>
