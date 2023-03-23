@@ -10,7 +10,7 @@ const PizzaStory = () => {
       <div className={styles.stories}>
         <div className={styles.story}>
           <div className={styles.storyImg}>
-            <Image src={"/img/pizza2.jpg"} alt="" width={300} height={400} />
+            <Image src={"/img/Pizza2.jpg"} alt="" width={300} height={400} />
           </div>
           <div className={styles.pizzaText}>
             <div className={styles.title}>Cheese Fountain Pizza</div>
@@ -31,7 +31,7 @@ const PizzaStory = () => {
         </div>
         <div className={styles.storyReverse}>
           <div className={styles.storyImg}>
-            <Image src={"/img/pizza3.jpg"} alt="" width={300} height={400} />
+            <Image src={"/img/Pizza3.jpg"} alt="" width={300} height={400} />
           </div>
           <div className={styles.pizzaText}>
             <div className={styles.title}>Meaty Onion Pizza</div>
@@ -52,7 +52,7 @@ const PizzaStory = () => {
         </div>
         <div className={styles.story}>
           <div className={styles.storyImg}>
-            <Image src={"/img/pizza2.jpg"} alt="" width={300} height={400} />
+            <Image src={"/img/Pizza2.jpg"} alt="" width={300} height={400} />
           </div>
           <div className={styles.pizzaText}>
             <div className={styles.title}>Tender Beef Pizza</div>

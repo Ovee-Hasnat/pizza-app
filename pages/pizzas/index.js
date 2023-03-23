@@ -6,7 +6,7 @@ const pizzas = () => {
     <div style={{ paddingTop: "100px" }}>
       <div
         style={{
-          backgroundImage: `url("/img/pizza5.jpg")`,
+          backgroundImage: `url("/img/Pizza5.jpg")`,
           height: "50vh",
           width: "100%",
           backgroundPosition: "center",
