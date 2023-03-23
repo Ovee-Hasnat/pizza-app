@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  basePath: "/public",
+  images: {
+    path: `public/_next/image`,
+  },
 };
 
 module.exports = nextConfig;
