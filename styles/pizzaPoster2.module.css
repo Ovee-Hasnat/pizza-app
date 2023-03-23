@@ -1,74 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+
 .container {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: url("/img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.wrapper{
-    width: 100%;
-    background-color:black;
-    height: 100%;
-    position: relative;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.leftWrapper {
-    width: 70%;
-    height: 100%;
-    position: relative;
+.heroText {
+  color: #fafafa;
+  position: absolute;
+  right: 60px;
+  bottom: 40%;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-.photo {
-    object-fit: contain;
-    opacity: 70%;
+.text1 {
+  font-size: 2.5vw;
+  font-family: "Luxurious Script", cursive;
 }
 
-.tagline {
-    height: 35%;
+.text2 {
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: 400;
+  font-family: "Old Standard TT", serif;
+}
+
+.text3 {
+  font-size: 2.2vw;
+  font-weight: 100;
+}
+
+.button {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  display: inline-block;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid #d1411e;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  color: #d1411e;
+  border-color: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  .heroText {
+    color: #fafafa;
     position: absolute;
-    z-index: 222;
-    width: 40%;
-    top: 22%;
-    left: 50%;
+    right: 60px;
+    bottom: 50%;
+  }
+  .text1 {
+    font-size: 3vw;
+  }
+
+  .text2 {
+    font-size: 4.2vw;
+  }
+
+  .text3 {
+    font-size: 3vw;
+  }
 }
 
-.tagline > h1 {
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-size: 6rem;
-    font-family: 'Times New Roman', Times, serif;
+@media screen and (max-width: 430px) {
+  .container {
+    background-position: 25%;
+  }
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-@media screen and (max-width: 1340px) {
-    .tagline {
-        top: 10%;
-    }
-}
+  .heroText {
+    position: static;
+  }
+  .text1 {
+    font-size: 6vw;
+  }
 
-@media screen and (max-width: 1200px) {
-    .container{
-        height: 70vh;
-    }
-    .photo {
-        object-fit: cover;
-        opacity: 35%;
-    }
-    .wrapper {
-        width: 100%;
-    }
-    .leftWrapper{
-        width: 100%;
-    }
-    .tagline {
-        background-color: rgba(0, 0, 0, 0.5);
-        height: fit-content;
-        padding: 20px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-    .tagline>h1{
-        font-size: 2rem;
-    }
-}
+  .text2 {
+    font-size: 8vw;
+  }
 
+  .text3 {
+    font-size: 5vw;
+  }
+}

@@ -1,5 +1,7 @@
 "use client";
 
+import { useSnackbar } from "notistack";
+
 import pizzaData from "../data/pizzaData.json";
 
 import React, { useState } from "react";
@@ -20,10 +22,10 @@ import {
 
 const PizzaDetail = ({ id }) => {
   const router = useRouter();
+  const { enqueueSnackbar } = useSnackbar();
+  const [size, setSize] = useState("small");
 
   const pizzaId = id;
-
-  const [size, setSize] = useState("small");
 
   const handleSize = (event) => {
     setSize(event.target.value);
@@ -55,6 +57,10 @@ const PizzaDetail = ({ id }) => {
   const handleAddToCart = (event) => {
     event.preventDefault();
     dispatch(addToCart(productToCart));
+    enqueueSnackbar("Added to cart.", {
+      autoHideDuration: 1500,
+      variant: "success",
+    });
   };
 
   return (

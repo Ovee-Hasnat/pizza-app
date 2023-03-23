@@ -1,40 +1,43 @@
 import PizzaList from "@/components/PizzaList";
+import { positions } from "@mui/system";
 import Image from "next/image";
 import React from "react";
 
 const pizzas = () => {
   return (
-    <div>
-      <div style={{ display: "flex", paddingTop: "100px" }}>
-        <div style={{ width: "50%", margin: "auto" }}>
-          <p
-            style={{
-              fontSize: "3rem",
-              color: "#d1411e",
-              textTransform: "uppercase",
-              textAlign: "center",
-              fontWeight: "600",
-            }}
-          >
-            Our
-            <br />
-            Pizza
-          </p>
-        </div>
+    <div style={{ paddingTop: "100px" }}>
+      <div
+        style={{
+          backgroundImage: `url("/img/pizza5.jpg")`,
+          height: "50vh",
+          width: "100%",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+        }}
+      >
         <div
           style={{
-            margin: "auto",
+            height: "100%",
             width: "100%",
-            height: "500px",
-            position: "relative",
+            backgroundColor: "rgba(0,0,0,0.4)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <Image
-            src="/img/pizza2.png"
-            alt=""
-            fill
-            style={{ objectFit: "cover", filter: "blur(2px)" }}
-          />
+          <h1
+            style={{
+              textAlign: "center",
+              width: "fit-content",
+              textTransform: "uppercase",
+              fontSize: "5rem",
+              fontWeight: "200",
+              color: "white",
+            }}
+          >
+            Our Pizzas
+          </h1>
         </div>
       </div>
       <PizzaList />

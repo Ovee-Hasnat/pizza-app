@@ -1,11 +1,12 @@
 .conatiner {
   width: 100vw;
-  padding: 10vh 15vw 20px;
+  padding: 100px 15vw 50px;
   background-color: #fafafa;
 }
 
 .headerTitle {
-  font-size: 60px;
+  font-size: 3.5vw;
+  font-weight: normal;
   text-align: center;
   margin-bottom: 35px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -95,5 +96,9 @@
   .button {
     margin-top: 35px;
     width: 50vw;
+  }
+
+  .headerTitle {
+    font-size: 13vw;
   }
 }

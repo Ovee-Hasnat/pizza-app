@@ -5,12 +5,12 @@ import styles from "../styles/pizzaStory.module.css";
 
 const PizzaStory = () => {
   return (
-    <div className={styles.conatiner}>
+    <div id="story" className={styles.conatiner}>
       <h1 className={styles.headerTitle}>Our Pizza stories!</h1>
       <div className={styles.stories}>
         <div className={styles.story}>
           <div className={styles.storyImg}>
-            <Image src={"/img/pizza2.png"} alt="" width={300} height={400} />
+            <Image src={"/img/pizza2.jpg"} alt="" width={300} height={400} />
           </div>
           <div className={styles.pizzaText}>
             <div className={styles.title}>Cheese Fountain Pizza</div>
@@ -31,7 +31,7 @@ const PizzaStory = () => {
         </div>
         <div className={styles.storyReverse}>
           <div className={styles.storyImg}>
-            <Image src={"/img/pizza3.png"} alt="" width={300} height={400}/>
+            <Image src={"/img/pizza3.jpg"} alt="" width={300} height={400} />
           </div>
           <div className={styles.pizzaText}>
             <div className={styles.title}>Meaty Onion Pizza</div>
@@ -52,7 +52,7 @@ const PizzaStory = () => {
         </div>
         <div className={styles.story}>
           <div className={styles.storyImg}>
-            <Image src={"/img/poster.jpg"} alt="" width={300} height={400} />
+            <Image src={"/img/pizza2.jpg"} alt="" width={300} height={400} />
           </div>
           <div className={styles.pizzaText}>
             <div className={styles.title}>Tender Beef Pizza</div>
