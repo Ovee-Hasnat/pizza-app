@@ -1,6 +1,4 @@
 import PizzaList from "@/components/PizzaList";
-import { positions } from "@mui/system";
-import Image from "next/image";
 import React from "react";
 
 const pizzas = () => {
