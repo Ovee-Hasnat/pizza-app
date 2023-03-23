@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 
   images: {
-    path: `public/_next/image`,
+    path: `public/img/_next/image`,
   },
 };
 
